@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\\u0422\u0418\\Lab3\\Lab3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{09E7790E-7982-4074-9C19-473CF866D30C}|Lab3\\Lab3.csproj|d:\\\u0442\u0438\\lab3\\lab3\\lab3\\rabincryptosystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09E7790E-7982-4074-9C19-473CF866D30C}|Lab3\\Lab3.csproj|solutionrelative:lab3\\rabincryptosystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{09E7790E-7982-4074-9C19-473CF866D30C}|Lab3\\Lab3.csproj|d:\\\u0442\u0438\\lab3\\lab3\\lab3\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{09E7790E-7982-4074-9C19-473CF866D30C}|Lab3\\Lab3.csproj|solutionrelative:lab3\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{09E7790E-7982-4074-9C19-473CF866D30C}|Lab3\\Lab3.csproj|d:\\\u0442\u0438\\lab3\\lab3\\lab3\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09E7790E-7982-4074-9C19-473CF866D30C}|Lab3\\Lab3.csproj|solutionrelative:lab3\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09E7790E-7982-4074-9C19-473CF866D30C}|Lab3\\Lab3.csproj|d:\\\u0442\u0438\\lab3\\lab3\\lab3\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{09E7790E-7982-4074-9C19-473CF866D30C}|Lab3\\Lab3.csproj|solutionrelative:lab3\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{09E7790E-7982-4074-9C19-473CF866D30C}|Lab3\\Lab3.csproj|d:\\\u0442\u0438\\lab3\\lab3\\lab3\\rabincryptosystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09E7790E-7982-4074-9C19-473CF866D30C}|Lab3\\Lab3.csproj|solutionrelative:lab3\\rabincryptosystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,16 +38,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "RabinCryptosystem.cs",
               "DocumentMoniker": "D:\\\u0422\u0418\\Lab3\\Lab3\\Lab3\\RabinCryptosystem.cs",
               "RelativeDocumentMoniker": "Lab3\\RabinCryptosystem.cs",
               "ToolTip": "D:\\\u0422\u0418\\Lab3\\Lab3\\Lab3\\RabinCryptosystem.cs",
               "RelativeToolTip": "Lab3\\RabinCryptosystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOcAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAK8AAAAAAAAAAADwv+cAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T19:22:14.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T19:22:14.227Z"
             },
             {
               "$type": "Document",
@@ -57,14 +56,13 @@
               "RelativeDocumentMoniker": "Lab3\\MainWindow.xaml.cs",
               "ToolTip": "D:\\\u0422\u0418\\Lab3\\Lab3\\Lab3\\MainWindow.xaml.cs",
               "RelativeToolTip": "Lab3\\MainWindow.xaml.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAAC8AAABLAAAAAAAAAA==",
+              "ViewState": "AgIAANIAAAAAAAAAAAAAANgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T17:53:22.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T17:53:22.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\\u0422\u0418\\Lab3\\Lab3\\Lab3\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Lab3\\MainWindow.xaml",

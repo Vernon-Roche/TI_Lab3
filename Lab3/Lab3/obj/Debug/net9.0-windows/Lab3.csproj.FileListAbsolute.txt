@@ -18,3 +18,4 @@ D:\ТИ\Lab3\Lab3\Lab3\obj\Debug\net9.0-windows\refint\Lab3.dll
 D:\ТИ\Lab3\Lab3\Lab3\obj\Debug\net9.0-windows\Lab3.pdb
 D:\ТИ\Lab3\Lab3\Lab3\obj\Debug\net9.0-windows\Lab3.genruntimeconfig.cache
 D:\ТИ\Lab3\Lab3\Lab3\obj\Debug\net9.0-windows\ref\Lab3.dll
+D:\ТИ\Lab3\Lab3\Lab3\obj\Debug\net9.0-windows\Lab3.sourcelink.json

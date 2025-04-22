@@ -121,7 +121,15 @@ public partial class MainWindow : Window
                 try
                 {
                     sourceBytes = File.ReadAllBytes(filePath);
-                    PrintAsNBytesValues(sourceBytes, tbSourceText, size);
+                    if (sourceBytes.Length % size == 0)
+                    {
+                        PrintAsNBytesValues(sourceBytes, tbSourceText, size);
+                    }
+                    else
+                    {
+                        sourceBytes = [];
+                        MessageBox.Show("Данный файл невозможно расшифровать введенными ключами.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
                 }
                 catch
                 {
@@ -203,17 +211,19 @@ public partial class MainWindow : Window
 
     private void rbDecrypt_Checked(object sender, RoutedEventArgs e)
     {
-        miOpenPlaintext.IsEnabled = false;
-        miSaveCiphertext.IsEnabled = false;
-        miOpenCiphertext.IsEnabled = true;
-        miSavePlaintext.IsEnabled = true;
-    }
-
-    private void rbEncrypt_Checked(object sender, RoutedEventArgs e)
-    {
         miOpenPlaintext.IsEnabled = true;
         miSaveCiphertext.IsEnabled = true;
         miOpenCiphertext.IsEnabled = false;
         miSavePlaintext.IsEnabled = false;
+        InitializeNewSession();
+    }
+
+    private void rbEncrypt_Checked(object sender, RoutedEventArgs e)
+    {
+        miOpenPlaintext.IsEnabled = false;
+        miSaveCiphertext.IsEnabled = false;
+        miOpenCiphertext.IsEnabled = true;
+        miSavePlaintext.IsEnabled = true;
+        InitializeNewSession();
     }
 }

@@ -25,9 +25,9 @@
         <Menu Grid.Row="0" Grid.ColumnSpan="2">
             <MenuItem Header="Файл">
                 <MenuItem x:Name="miOpenPlaintext" Header="Открыть исходный файл" Click="MenuItemOpen_Click"></MenuItem>
-                <MenuItem x:Name="miSaveCiphertext" Header="Сохранить зашифрованный файл" Click="MenuItemSave_Click" IsEnabled="False"></MenuItem>
+                <MenuItem x:Name="miSaveCiphertext" Header="Сохранить зашифрованный файл" Click="MenuItemSave_Click"></MenuItem>
                 <MenuItem x:Name="miOpenCiphertext" Header="Открыть зашифрованный файл" Click="MenuItemOpenEncrypted_Click" IsEnabled="False"></MenuItem>
-                <MenuItem x:Name="miSavePlaintext" Header="Сохранить исходный файл" Click="MenuItemSave_Click"></MenuItem>
+                <MenuItem x:Name="miSavePlaintext" Header="Сохранить исходный файл" Click="MenuItemSave_Click" IsEnabled="False"></MenuItem>
             </MenuItem>
         </Menu>
         <Border Grid.Row="1" Grid.Column="0" BorderBrush="Black" BorderThickness="1, 1, 1, 1">
@@ -48,8 +48,8 @@
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
-                    <RadioButton x:Name="rbEncrypt" Grid.Row="0" FontSize="16" IsChecked="True" Checked="rbEncrypt_Checked">Зашифровать</RadioButton>
-                    <RadioButton x:Name="rbDecrypt" Grid.Row="1" FontSize="16" Checked="rbDecrypt_Checked">Расшифровать</RadioButton>
+                    <RadioButton x:Name="rbEncrypt" Grid.Row="0" FontSize="16" IsChecked="True" Unchecked="rbEncrypt_Checked">Зашифровать</RadioButton>
+                    <RadioButton x:Name="rbDecrypt" Grid.Row="1" FontSize="16" Unchecked="rbDecrypt_Checked">Расшифровать</RadioButton>
                 </Grid>
                 <Label Grid.Row="1" Style="{StaticResource LabelStyle}">Значение p:</Label>
                 <TextBox x:Name="tbP" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" TextChanged="tbP_TextChanged"></TextBox>
