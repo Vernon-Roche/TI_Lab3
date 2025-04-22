@@ -1,0 +1,76 @@
+﻿<Window x:Class="Lab3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="LabelStyle" TargetType="Label">
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+            <Setter Property="FontSize" Value="16"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Menu Grid.Row="0" Grid.ColumnSpan="2">
+            <MenuItem Header="Файл">
+                <MenuItem x:Name="miOpenPlaintext" Header="Открыть исходный файл" Click="MenuItemOpen_Click"></MenuItem>
+                <MenuItem x:Name="miSaveCiphertext" Header="Сохранить зашифрованный файл" Click="MenuItemSave_Click" IsEnabled="False"></MenuItem>
+                <MenuItem x:Name="miOpenCiphertext" Header="Открыть зашифрованный файл" Click="MenuItemOpenEncrypted_Click" IsEnabled="False"></MenuItem>
+                <MenuItem x:Name="miSavePlaintext" Header="Сохранить исходный файл" Click="MenuItemSave_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Border Grid.Row="1" Grid.Column="0" BorderBrush="Black" BorderThickness="1, 1, 1, 1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <RadioButton x:Name="rbEncrypt" Grid.Row="0" FontSize="16" IsChecked="True" Checked="rbEncrypt_Checked">Зашифровать</RadioButton>
+                    <RadioButton x:Name="rbDecrypt" Grid.Row="1" FontSize="16" Checked="rbDecrypt_Checked">Расшифровать</RadioButton>
+                </Grid>
+                <Label Grid.Row="1" Style="{StaticResource LabelStyle}">Значение p:</Label>
+                <TextBox x:Name="tbP" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" TextChanged="tbP_TextChanged"></TextBox>
+                <Label Grid.Row="3" Style="{StaticResource LabelStyle}">Значение q:</Label>
+                <TextBox x:Name="tbQ" Grid.Row="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" TextChanged="tbP_TextChanged"></TextBox>
+                <Label Grid.Row="5" Style="{StaticResource LabelStyle}">Значение b:</Label>
+                <TextBox x:Name="tbB" Grid.Row="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16"></TextBox>
+                <Button Grid.Row="7" Margin="2" FontSize="16" Click="Button_Click">Шифровать/Расшифровать</Button>
+            </Grid>
+        </Border>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="35"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Style="{StaticResource LabelStyle}" BorderThickness="0, 1, 0, 1" BorderBrush="Black">Исходный текст</Label>
+            <Label Grid.Row="2" Style="{StaticResource LabelStyle}" BorderThickness="0, 1, 0, 1" BorderBrush="Black">Зашифрованный/Расшифрованный текст</Label>
+            <TextBox x:Name="tbSourceText" Grid.Row="1" IsReadOnly="True" FontSize="16" TextWrapping="WrapWithOverflow" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"></TextBox>
+            <TextBox x:Name="tbResultText" Grid.Row="3" IsReadOnly="True" FontSize="16" TextWrapping="WrapWithOverflow" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"></TextBox>
+        </Grid>
+    </Grid>
+</Window>
